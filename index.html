@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wild Planet – Nagaland</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>SERENE SEVEN – Assam</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
         * {
             margin: 0;
@@ -43,7 +44,7 @@
             left: 0;
             height: 100%;
             width: 100%;
-            background: url(https://t3.ftcdn.net/jpg/11/10/71/00/360_F_1110710032_r81jAARtEaTQKv1yzhDSUI6eBgSFbBok.jpg) center center / cover no-repeat;
+            background: url(assets/assam.jpg) center center / cover no-repeat;
             filter: blur(0.15vw);
             z-index: 0;
         }
@@ -63,10 +64,10 @@
         /* Title Behind Foreground */
         .title-behind {
             position: absolute;
-            top: 45.07vh;
+            top: 50.08vh;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 6.14vw;
+            font-size: 11.52vw;
             font-weight: 900;
             letter-spacing: 0.92vw;
             z-index: 1.5;
@@ -75,10 +76,11 @@
             text-shadow: 0.15vw 0.15vw 0.31vw rgba(0, 0, 0, 0.3);
         }
 
+        /* Kaziranga Title (Initially Hidden) */
         .title-kaziranga {
             position: absolute;
             top: 33.39vh;
-            left: 27%;
+            left: 30%;
             transform: translate(-50%, -50%);
             font-size: 2.3vw;
             font-weight: 900;
@@ -98,7 +100,7 @@
             right: 2.3vw;
             display: flex;
             justify-content: space-between;
-            font-size: 1.07vw;
+            font-size: 1.08vw;
             text-transform: uppercase;
             letter-spacing: 0.08vw;
             z-index: 4;
@@ -108,7 +110,6 @@
             display: flex;
             gap: 0.77vw;
             align-items: center;
-            cursor: pointer;
         }
 
         .navbar .right a {
@@ -117,121 +118,8 @@
             text-decoration: none;
             font-weight: bold;
         }
-
         .navbar .right i {
             font-size: large;
-        }
-
-        /* Burger Menu Styles */
-        .burger-menu {
-            position: absolute;
-            top: 10.85vh;
-            left: 2.3vw;
-            min-width: 19.2vw;
-            background: linear-gradient(135deg,
-                    rgba(255, 255, 255, 0.1),
-                    rgba(255, 255, 255, 0.05));
-            backdrop-filter: blur(1.54vw);
-            -webkit-backdrop-filter: blur(1.54vw);
-            border: 0.08vw solid rgba(255, 255, 255, 0.2);
-            border-radius: 1.15vw;
-            padding: 0;
-            display: none;
-            flex-direction: column;
-            z-index: 1000;
-            box-shadow:
-                0 0.62vw 2.46vw rgba(0, 0, 0, 0.3),
-                inset 0 0.08vw 0 rgba(255, 255, 255, 0.2);
-            overflow: hidden;
-            transform: translateY(-0.77vw);
-            opacity: 0;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .burger-menu.active {
-            display: flex;
-            transform: translateY(0);
-            opacity: 1;
-            animation: slideIn 0.3s ease-out;
-        }
-
-        @keyframes slideIn {
-            from {
-                transform: translateY(-0.77vw);
-                opacity: 0;
-            }
-
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        .burger-menu::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 0.08vw;
-            background: linear-gradient(90deg,
-                    transparent,
-                    rgba(255, 255, 255, 0.3),
-                    transparent);
-        }
-
-        .burger-menu a {
-            color: white;
-            padding: 2.67vh 1.54vw;
-            text-decoration: none;
-            font-size: 1.07vw;
-            font-weight: 500;
-            letter-spacing: 0.08vw;
-            text-transform: uppercase;
-            position: relative;
-            transition: all 0.3s ease;
-            border-bottom: 0.08vw solid rgba(255, 255, 255, 0.1);
-        }
-
-        .burger-menu a:last-child {
-            border-bottom: none;
-        }
-
-        .burger-menu a:hover {
-            background: linear-gradient(135deg,
-                    rgba(255, 255, 255, 0.15),
-                    rgba(255, 255, 255, 0.08));
-            color: #fff;
-            padding-left: 1.92vw;
-            transform: translateX(0.38vw);
-            box-shadow: inset 0 0 1.54vw rgba(255, 255, 255, 0.1);
-        }
-
-        .burger-menu a::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: 0.23vw;
-            background: linear-gradient(180deg, #4ade80, #06b6d4);
-            transform: scaleY(0);
-            transition: transform 0.3s ease;
-        }
-
-        .burger-menu a:hover::before {
-            transform: scaleY(1);
-        }
-
-        /* Menu icon animation */
-        .menu-icon {
-            font-size: 1.38vw;
-            margin-right: 0.62vw;
-            transition: transform 0.3s ease;
-        }
-
-        .menu-icon.active {
-            transform: rotate(90deg);
         }
 
         /* Main Content */
@@ -239,7 +127,7 @@
             z-index: 3;
             position: relative;
             width: 100%;
-            max-width: 92.2vw;
+            max-width: 92.16vw;
             margin: 0 auto;
         }
 
@@ -278,9 +166,9 @@
             z-index: 3;
             line-height: 1.6;
             position: absolute;
-            left: 36.87vw;
+            left: 34.56vw;
             transform: translateX(-50%);
-            bottom: 6.68vh;
+            bottom: 5.84vh;
             text-align: left;
             padding-right: 21.51vw;
         }
@@ -291,7 +179,7 @@
             border: 0.15vw solid white;
             background: transparent;
             color: white;
-            font-size: 1.07vw;
+            font-size: 1.08vw;
             text-transform: uppercase;
             letter-spacing: 0.08vw;
             cursor: pointer;
@@ -316,11 +204,14 @@
             pointer-events: none;
         }
 
-        /* Arrows Navigation */
+        .a {
+            text-decoration: none;
+        }
+
         .arrow {
             position: absolute;
             bottom: 5.01vh;
-            font-size: 1.07vw;
+            font-size: 1.08vw;
             letter-spacing: 0.08vw;
             text-transform: uppercase;
             color: #fff;
@@ -340,6 +231,12 @@
 
         .arrow.right {
             right: 2.3vw;
+        }
+
+        /* Menu icon */
+        .menu-icon {
+            font-size: 1.38vw;
+            margin-right: 0.62vw;
         }
 
         /* Scroll Indicator */
@@ -376,6 +273,202 @@
             text-decoration: none;
             color: white;
         }
+        .right i{
+            font-size: 1.23vw;
+        }
+         .burger-menu {
+            position: absolute;
+            top: 10.85vh;
+            left: 2.3vw;
+            min-width: 19.2vw;
+            background: linear-gradient(135deg, 
+                rgba(255, 255, 255, 0.1), 
+                rgba(255, 255, 255, 0.05)
+            );
+            backdrop-filter: blur(1.54vw);
+            -webkit-backdrop-filter: blur(1.54vw);
+            border: 0.08vw solid rgba(255, 255, 255, 0.2);
+            border-radius: 1.15vw;
+            padding: 0;
+            display: none;
+            flex-direction: column;
+            z-index: 1000;
+            box-shadow: 
+                0 0.62vw 2.46vw rgba(0, 0, 0, 0.3),
+                inset 0 0.08vw 0 rgba(255, 255, 255, 0.2);
+            overflow: hidden;
+            transform: translateY(-1.67vh);
+            opacity: 0;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .burger-menu.active {
+            display: flex;
+            transform: translateY(0);
+            opacity: 1;
+            animation: slideIn 0.3s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-1.67vh);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .burger-menu::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 0.17vh;
+            background: linear-gradient(90deg, 
+                transparent, 
+                rgba(255, 255, 255, 0.3), 
+                transparent
+            );
+        }
+
+        .burger-menu a {
+            color: white;
+            padding: 2.67vh 1.54vw;
+            text-decoration: none;
+            font-size: 1.08vw;
+            font-weight: 500;
+            letter-spacing: 0.08vw;
+            text-transform: uppercase;
+            position: relative;
+            transition: all 0.3s ease;
+            border-bottom: 0.17vh solid rgba(255, 255, 255, 0.1);
+        }
+
+        .burger-menu a:last-child {
+            border-bottom: none;
+        }
+
+        .burger-menu a:hover {
+            background: linear-gradient(135deg, 
+                rgba(255, 255, 255, 0.15), 
+                rgba(255, 255, 255, 0.08)
+            );
+            color: #fff;
+            padding-left: 1.92vw;
+            transform: translateX(0.38vw);
+        }
+
+        .burger-menu a::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 0.23vw;
+            background: linear-gradient(180deg, #4ade80, #06b6d4);
+            transform: scaleY(0);
+            transition: transform 0.3s ease;
+        }
+
+        .burger-menu a:hover::before {
+            transform: scaleY(1);
+        }
+
+        /* Add subtle glow effect on hover */
+        .burger-menu a:hover {
+            box-shadow: inset 0 0 1.54vw rgba(255, 255, 255, 0.1);
+        }
+
+        /* Menu toggle animation */
+        .menu-icon.active {
+            transform: rotate(90deg);
+        }
+        @media screen and (max-width: 768px) {
+            .title-behind {
+                font-size: clamp(40px, 12vw, 80px);
+                letter-spacing: clamp(2px, 1vw, 8px);
+            }
+            
+            .title-kaziranga {
+                font-size: clamp(16px, 4vw, 24px);
+                letter-spacing: clamp(1px, 0.5vw, 4px);
+                left: 50%;
+                top: 25vh;
+            }
+            
+            .description-original,
+            .description-new {
+                font-size: clamp(14px, 3.5vw, 18px);
+                max-width: 90vw;
+                left: 50%;
+                padding-right: 0;
+                text-align: center;
+            }
+            
+            .description-new {
+                left: 50%;
+                bottom: 15vh;
+                justify-content: center;
+            }
+            
+            .navbar {
+                font-size: clamp(12px, 3vw, 16px);
+                left: 5vw;
+                right: 5vw;
+            }
+            
+            .arrow {
+                font-size: clamp(12px, 3vw, 16px);
+            }
+            
+            .arrow.left {
+                left: 5vw;
+            }
+            
+            .arrow.right {
+                right: 5vw;
+            }
+            
+            .cta {
+                font-size: clamp(12px, 3vw, 16px);
+                padding: 12px 24px;
+            }
+            
+            .burger-menu {
+                min-width: 80vw;
+                left: 5vw;
+            }
+            
+            .burger-menu a {
+                font-size: clamp(14px, 3.5vw, 18px);
+                padding: 20px 24px;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            .hero {
+                padding: 4vw;
+            }
+            
+            .title-behind {
+                font-size: clamp(32px, 15vw, 60px);
+            }
+            
+            .description-original,
+            .description-new {
+                font-size: 16px;
+                justify-content: center;
+
+            }
+            
+            .foreground {
+                max-height: 80vh;
+            }
+        }
+
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
@@ -390,7 +483,7 @@
         <!-- Navigation -->
         <header class="navbar">
             <div class="left">
-                <span class="menu-icon" id="menu-toggle">☰</span> NAVIGATION
+                 <span class="menu-icon" id="menu-toggle">☰</span> NAVIGATION
             </div>
             <div class="right">
                 <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -399,23 +492,19 @@
                 <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
             </div>
         </header>
-
-        <!-- Burger Menu -->
         <nav class="burger-menu" id="burger-menu">
-            <a href="index.html">Assam</a>
-            <a href="arunachal1.html">Arunachal Pradesh</a>
-            <a href="manipur1.html">Manipur</a>
-            <a href="meghalya1.html">Meghalaya</a>
-            <a href="mizoram1.html">Mizoram</a>
-            <a href="nagaland1.html">Nagaland</a>
-            <a href="tripura1.html">Tripura</a>
-        </nav>
+  <a href="index.html">Assam</a>
+  <a href="arunachal1.html">Arunachal Pradesh</a>
+  <a href="manipur1.html">Manipur</a>
+  <a href="meghalya1.html">Meghalaya</a>
+  <a href="mizoram1.html">Mizoram</a>
+  <a href="nagaland1.html">Nagaland</a>
+  <a href="tripura1.html">Tripura</a>
+</nav>
 
-        <!-- Main Title (NAGALAND) -->
-        <h1 class="title-behind">NAGALAND</h1>
+        <h1 class="title-behind">ASSAM</h1>
 
-        <!-- Kaziranga Title (Initially Hidden) -->
-        <h4 class="title-kaziranga">Dzukou Valley</h4>
+        <h4 class="title-kaziranga">Kaziranga National Park</h4>
 
         <!-- Content -->
         <div class="content">
@@ -423,33 +512,25 @@
 
             <div class="description-container">
                 <p class="description-original">
-                    The most festive, warrior-hearted, highland home where fierce Naga
-                    tribes celebrate eternal brotherhood. </p>
+                    The coldest, windiest, most hostile continent. Only the toughest can survive here.
+                </p>
                 <p class="description-new">
-                    "Here hills and vales, the woodland and the plain,
-
-                    Here earth and water seem to strive again,
-
-                    Not chaos-like together crushed and bruised,
-
-                    But as the world, harmoniously confused:
-
-                    Where order in variety we see,
-
-                    And where, though all things differ, all agree."
-
-
-                    - Alexander Pope </p>
-                <button class="cta"><a href="gallerynagaland.html">SEE MORE</a></button>
+                    Heritage Site covering 430 square kilometers. Famous for hosting
+            two-thirds of the world's one-horned rhinoceros population, it was
+            established in 1905 and declared a national park in 1974. The park
+            also houses tigers, elephants, and numerous diverse bird species.
+                </p>
+                <button class="cta"><a href="galleryassam.html">SEE MORE</a></button>
             </div>
         </div>
 
         <!-- Foreground Image -->
-        <img src="assets/tribe.png" alt="Penguins" class="foreground" />
+        <img src="assets/rhino.png" alt="rhino" class="foreground" />
 
         <!-- Navigation Arrows -->
-        <a href="manipur1.html" class="arrow left">← MANIPUR</a>
-        <a href="mizoram1.html" class="arrow right">MIZORAM →</a>
+        <a href="meghalya1.html" class="arrow left">← MEGHALAYA</a>
+        <a href="arunachal1.html" class="arrow right">ARUNACHAL PRADESH →</a>
+
 
         <!-- Scroll Indicator -->
         <div class="scroll-indicator">
@@ -463,43 +544,38 @@
         // Register ScrollTrigger plugin
         gsap.registerPlugin(ScrollTrigger);
 
-        // Burger Menu Functionality
-        const toggleBtn = document.getElementById('menu-toggle');
-        const burgerMenu = document.getElementById('burger-menu');
-
-        toggleBtn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            burgerMenu.classList.toggle('active');
-            toggleBtn.classList.toggle('active');
-        });
-
-        // Close menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!burgerMenu.contains(e.target) && !toggleBtn.contains(e.target)) {
-                burgerMenu.classList.remove('active');
-                toggleBtn.classList.remove('active');
-            }
-        });
-
         // Initial animations
         gsap.from(".foreground", {
-            y: 100,
+            y: "16.69vh",
             opacity: 0,
             duration: 2,
             ease: "power3.out"
         });
 
         gsap.from(".title-behind", {
-            y: 50,
+            y: "8.35vh",
             opacity: 0,
             duration: 1.5,
             delay: 0.5
         });
 
+
         gsap.set(".foreground", {
             x: "-50%", // Start from center-left position
             y: "23.37vh"
         });
+
+        // Scroll-triggered animations
+        // Scroll-triggered animations
+        // Store original positions and styles
+        const originalStyles = {
+            titleBehind: {
+                fontSize: window.getComputedStyle(document.querySelector('.title-behind')).fontSize,
+                opacity: 1,
+                transform: window.getComputedStyle(document.querySelector('.title-behind')).transform
+            },
+            // Add other elements if needed
+        };
 
         // Scroll-triggered animations
         ScrollTrigger.create({
@@ -510,9 +586,9 @@
             onUpdate: (self) => {
                 const progress = self.progress;
 
-                // Animate NAGALAND title with proper reset capability
+                // Animate ASSAM title with proper reset capability
                 gsap.to(".title-behind", {
-                    fontSize: `${6.14 - (9.21 * progress)}vw`,
+                    fontSize: `${11.52 - (9.22 * progress)}vw`,
                     opacity: 1 - progress,
                     ease: "power2.out",
                     overwrite: "auto" // Ensures proper overwriting of animations
@@ -535,7 +611,7 @@
                 // Fade in new description
                 gsap.to(".description-new", {
                     opacity: progress,
-                    y: -3.34 * (1 - progress) + "vh",
+                    y: `${-3.34 * (1 - progress)}vh`,
                     ease: "power2.out",
                     overwrite: "auto"
                 });
@@ -554,6 +630,24 @@
                 });
             }
         });
+
+const toggleBtn = document.getElementById('menu-toggle');
+        const burgerMenu = document.getElementById('burger-menu');
+
+        toggleBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            burgerMenu.classList.toggle('active');
+            toggleBtn.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!burgerMenu.contains(e.target) && !toggleBtn.contains(e.target)) {
+                burgerMenu.classList.remove('active');
+                toggleBtn.classList.remove('active');
+            }
+        });
+
     </script>
 </body>
 
